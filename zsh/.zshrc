@@ -1,6 +1,13 @@
 autoload -Uz compinit
 compinit
 
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 ################################################
 ################# - ALIASES - ##################
 ################################################
@@ -102,17 +109,25 @@ alias plz="please"
 ################################################
 ################# - KEYBINDINGS - ##############
 ################################################
-bindkey '^[[2~' overwrite-mode
-bindkey '^[[3~' delete-char
-bindkey '^[[H' beginning-of-line
-bindkey '^[[1~' beginning-of-line
-bindkey '^[[F' end-of-line
-bindkey '^[[4~' end-of-line
-bindkey '^[[1;5C' forward-word
-bindkey '^[[1;5D' backward-word
-bindkey '^[[3;5~' kill-word
-bindkey '^[[5~' beginning-of-buffer-or-history
-bindkey '^[[6~' end-of-buffer-or-history
+# bindkey '^[[2~' overwrite-mode
+# bindkey '^[[3~' delete-char
+# bindkey '^[[H' beginning-of-line
+# bindkey '^[[1~' beginning-of-line
+# bindkey '^[[F' end-of-line
+# bindkey '^[[4~' end-of-line
+# bindkey '^[[1;5C' forward-word
+# bindkey '^[[1;5D' backward-word
+# bindkey '^[[3;5~' kill-word
+# bindkey '^[[5~' beginning-of-buffer-or-history
+# bindkey '^[[6~' end-of-buffer-or-history
+
+# export LESS_TERMCAP_mb=$'\e[1;32m'
+# export LESS_TERMCAP_md=$'\e[1;32m'
+# export LESS_TERMCAP_me=$'\e[0m'
+# export LESS_TERMCAP_se=$'\e[0m'
+# export LESS_TERMCAP_so=$'\e[01;33m'
+# export LESS_TERMCAP_ue=$'\e[0m'
+# export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 ################################################
 ################# - STARSHIP - ##################
