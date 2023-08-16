@@ -1,1 +1,0 @@
-{"Name":"great_galileo","Driver":"docker-container","Nodes":[{"Name":"great_galileo0","Endpoint":"unix:///var/run/docker.sock","Platforms":null,"Flags":null,"DriverOpts":{},"Files":null}],"Dynamic":false}
