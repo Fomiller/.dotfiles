@@ -8,6 +8,7 @@ HISTFILE=~/.zsh_history
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+source ~/cigna.zsh 2> /dev/null
 ################################################
 ################# - ALIASES - ##################
 ################################################
