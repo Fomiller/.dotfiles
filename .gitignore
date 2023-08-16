@@ -1,2 +1,10 @@
+#docker
 docker/.docker/sbom/*
+docker/.docker/buildx/*
+docker/.docker/cli-plugins/*
+docker/.docker/contexts/*
+docker/.docker/desktop-build/*
+
+#github cli
 gh/.config/gh/hosts.yml
+
