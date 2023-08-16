@@ -8,6 +8,7 @@ HISTFILE=~/.zsh_history
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
+source ~/cigna.zsh 2> /dev/null
 ################################################
 ################# - ALIASES - ##################
 ################################################
@@ -45,6 +46,9 @@ export EDITOR='nvim'
 export PATH="$PATH:/usr/local/nvim/bin"
 export PATH="$PATH:/usr/local/opt/gnu-tar/libexec/gnubin"
 
+#homebrew
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
 ################################################
 ################# - DOCKER - ##################
 ################################################
@@ -68,6 +72,7 @@ alias kdr='kubectl --dry-run=client -o yaml'
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 #virtualenvwrapper
+export VIRTUALENVWRAPPER_PYTHON=$PYENV_ROOT/versions/$(pyenv global)/bin/python
 export WORKON_HOME=~/.virualenvs
 
 ################################################
